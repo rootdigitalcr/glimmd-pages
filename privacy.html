@@ -10,15 +10,16 @@
 <body>
   <header>
     <a class="brand" href="index.html"><span class="mark">G</span><strong>Glimmd</strong></a>
-    <nav><a href="index.html">Home</a><a href="support.html">Support</a><a class="language-link" href="es/privacy.html" lang="es">Español</a></nav>
+    <nav><a href="index.html">Home</a><a href="important-information.html">Important information</a><a href="support.html">Support</a><a class="language-link" href="es/privacy.html" lang="es">Español</a></nav>
   </header>
   <main>
-    <p>Last updated: July 17, 2026</p>
+    <p>Last updated: July 27, 2026</p>
     <h1>Privacy Policy</h1>
     <p class="lead">Glimmd works locally inside Chrome. It does not sell, share, or transmit Markdown documents, browsing history, personal data, or preferences to the developer's servers.</p>
     <h2>Information handled</h2>
     <p>Glimmd handles the content and URL of the Markdown document the user opens solely to render it, create an outline, search it, refresh that exact document, and resolve local navigation. Processing happens on the device. Document content is not persistently stored and is not available to the developer.</p>
-    <p>Reader preferences are stored in the local Chrome profile using <code>chrome.storage.local</code>. A sibling-file list may be cached in session storage for 30 seconds. Users can delete preferences by restoring defaults or uninstalling Glimmd.</p>
+    <p>Reader preferences are stored in the local Chrome profile using <code>chrome.storage.local</code>. To restore the reading point after reopening a document, Glimmd keeps a limited recent-reading record for up to 120 documents for no longer than one year. Each record contains an identifier derived from the normalized document URL, the selected view, an approximate numeric text offset, a scroll ratio, and an update time; it does not contain document text. Highlights and comments created by the user are stored separately in the extension's local IndexedDB and include the selected passage, short context, position, dates, and hashes used to match the file and version safely. Highlights also store the chosen color; comments store the text written by the user. They can be managed from the reader or deleted by document from Preferences. Preferences can also download a local JSON backup for one, several, or all documents. That backup contains selected passages and comments but no complete local paths; Glimmd does not upload it. A sibling-file list may be cached in session storage for 30 seconds. Uninstalling Glimmd removes its local data. None of this information is available to the developer or sent to developer servers.</p>
+    <p>The first-use notice stores only its version and acknowledgement date in the local Chrome profile. It contains no document or annotation content, is not included in preference exports, and is not sent to the developer. Local storage is not a backup and can be lost; see <a href="important-information.html">Important information and limitations</a>.</p>
     <h2>Local files and network requests</h2>
     <p>File URL access must be enabled explicitly in Chrome. Folder navigation is limited to Markdown files in the exact parent folder of the open document. Remote images are blocked by default. When enabled by the user, HTTPS images are requested directly from their origin without a referrer. The origin may receive normal connection data such as the IP address.</p>
     <h2>External services</h2>

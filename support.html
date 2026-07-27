@@ -10,12 +10,24 @@
 <body>
   <header>
     <a class="brand" href="index.html"><span class="mark">G</span><strong>Glimmd</strong></a>
-    <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a class="language-link" href="es/support.html" lang="es">Español</a></nav>
+    <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="important-information.html">Important information</a><a class="language-link" href="es/support.html" lang="es">Español</a></nav>
   </header>
   <main>
     <h1>Support</h1>
     <p class="lead">Report problems and request help through Glimmd's public support tracker.</p>
     <p><a href="https://github.com/rootdigitalcr/glimmd-pages/issues/new" rel="noopener noreferrer">Open a support request on GitHub</a></p>
+    <h2 id="local-files">Read local Markdown files</h2>
+    <ol>
+      <li>Open <code>chrome://extensions</code>, find Glimmd, and choose <strong>Details</strong>.</li>
+      <li>Enable <strong>Allow access to file URLs</strong>. Chrome requires this explicit choice; Glimmd cannot enable it for you.</li>
+      <li>Drag a <code>.md</code> file into Chrome or use <kbd>Ctrl</kbd>+<kbd>O</kbd>.</li>
+      <li>If the tab was already open after installation, an update, or a permission change, reload it once.</li>
+    </ol>
+    <p>The extension's <strong>Help and getting started</strong> page checks the current access state and explains navigation, search, appearance, shortcuts, and common problems.</p>
+    <h2>Highlights, comments, and file changes</h2>
+    <p>Select up to 500 characters and use the floating menu to highlight or comment on the passage. You can also add a comment to an existing highlight, or highlight a saved comment's passage directly from its editor without selecting it again. Both types stay in the local Chrome profile and appear in document order in separate right-panel tabs. Preferences shows their approximate storage, explores saved comments by text or document, and can back up or delete one, several, or all documents. When a file changes, Glimmd restores only unambiguous matches. Unmatched passages remain under <strong>Previous version</strong> so they can be copied or deleted; Glimmd never guesses a new location.</p>
+    <h2>Resume reading</h2>
+    <p>Glimmd remembers an approximate reading point for up to 120 recently opened documents and adapts it to the current window size when the document is opened again. This limited record stays in the local Chrome profile and expires after one year.</p>
     <h2>Before reporting a problem</h2>
     <ol>
       <li>Confirm that Chrome 122 or newer is installed.</li>

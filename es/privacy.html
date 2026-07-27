@@ -10,21 +10,22 @@
 <body>
   <header>
     <a class="brand" href="index.html"><span class="mark">G</span><strong>Glimmd</strong></a>
-    <nav><a href="index.html">Inicio</a><a href="support.html">Soporte</a><a class="language-link" href="../privacy.html" lang="en">English</a></nav>
+    <nav><a href="index.html">Inicio</a><a href="informacion-importante.html">Información importante</a><a href="support.html">Soporte</a><a class="language-link" href="../privacy.html" lang="en">English</a></nav>
   </header>
   <main>
-    <p>Última actualización: 17 de julio de 2026</p>
+    <p>Última actualización: 27 de julio de 2026</p>
     <h1>Política de privacidad</h1>
     <p class="lead">Glimmd funciona localmente dentro de Chrome. No vende, comparte ni transmite documentos Markdown, historial de navegación, datos personales o preferencias a servidores del desarrollador.</p>
     <h2>Información tratada</h2>
     <p>Glimmd trata el contenido y la URL del documento Markdown abierto únicamente para representarlo, crear el índice, buscar, recargar ese documento exacto y resolver la navegación local. El procesamiento ocurre en el dispositivo. El contenido no se almacena de forma persistente ni queda disponible para el desarrollador.</p>
-    <p>Las preferencias se guardan en el perfil local de Chrome mediante <code>chrome.storage.local</code>. La lista de archivos hermanos puede conservarse 30 segundos en el almacenamiento de sesión. Puede borrarse restaurando los valores iniciales o desinstalando Glimmd.</p>
+    <p>Las preferencias se guardan en el perfil local de Chrome mediante <code>chrome.storage.local</code>. Para restaurar el punto de lectura al reabrir un documento, Glimmd conserva un registro reciente de hasta 120 documentos durante un máximo de un año. Cada registro contiene un identificador derivado de la URL normalizada, la vista elegida, una coordenada numérica aproximada del texto, una proporción de desplazamiento y la fecha de actualización; no contiene texto del documento. Los resaltados y comentarios creados por el usuario se guardan por separado en IndexedDB local e incluyen el fragmento seleccionado, contexto breve, posición, fechas y hashes usados para asociar de forma segura el archivo y su versión. Los resaltados guardan además el color y los comentarios el texto escrito por el usuario. Pueden gestionarse desde el lector o eliminarse por documento en Preferencias. Preferencias también puede descargar un respaldo JSON local de uno, varios o todos los documentos. Ese respaldo contiene fragmentos y comentarios, pero no rutas locales completas; Glimmd no lo sube. La lista de archivos hermanos puede conservarse 30 segundos en el almacenamiento de sesión. Desinstalar Glimmd elimina sus datos locales. Ninguna de esta información queda disponible para el desarrollador ni se envía a sus servidores.</p>
+    <p>El aviso inicial guarda únicamente su versión y la fecha de confirmación en el perfil local de Chrome. No contiene documentos ni anotaciones, no se incluye al exportar preferencias y no se envía al desarrollador. El almacenamiento local no es un respaldo y puede perderse; consulta la <a href="informacion-importante.html">Información importante y limitaciones</a>.</p>
     <h2>Archivos locales y red</h2>
     <p>El acceso a URLs de archivo debe habilitarse expresamente en Chrome. La navegación se limita a Markdown de la carpeta padre exacta del documento. Las imágenes remotas están bloqueadas por defecto; al habilitarlas, se solicitan por HTTPS directamente a su origen y sin referente. El origen puede recibir datos normales de conexión como la dirección IP.</p>
     <h2>Servicios externos</h2>
     <p>El botón opcional de apoyo abre <a href="https://ko-fi.com/rootdigitalcr" rel="noopener noreferrer">Ko-fi</a> solo después de un clic. Glimmd no envía a Ko-fi el documento ni las preferencias. Ko-fi puede tratar conexión, cookies y pagos conforme a su política. Glimmd no recibe datos de la donación.</p>
     <p>El enlace del creador abre <a href="https://root-cr.com/" rel="noopener noreferrer">Root Digital CR</a> solo después de un clic. No transmite documentos ni preferencias.</p>
-    <p>Si la persona abre voluntariamente una solicitud de soporte, GitHub trata la información enviada conforme a sus propias condiciones de privacidad. Las solicitudes son públicas. Glimmd nunca adjunta documentos ni preferencias automáticamente.</p>
+    <p>Si el usuario abre voluntariamente una solicitud de soporte, GitHub trata la información enviada conforme a sus propias condiciones de privacidad. Las solicitudes son públicas. Glimmd nunca adjunta documentos ni preferencias automáticamente.</p>
     <h2>Declaración de Uso Limitado</h2>
     <p class="notice">El uso de la información recibida mediante las APIs de Chrome cumple la Política de Datos de Usuario de Chrome Web Store, incluidos sus requisitos de Uso Limitado. Se usa solo para ofrecer o mejorar las funciones visibles de lectura Markdown; no se vende ni transfiere para publicidad, perfiles o fines ajenos y no queda disponible para lectura humana mediante sistemas del desarrollador.</p>
     <h2>Seguridad y cambios</h2>

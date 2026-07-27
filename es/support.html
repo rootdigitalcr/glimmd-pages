@@ -10,16 +10,28 @@
 <body>
   <header>
     <a class="brand" href="index.html"><span class="mark">G</span><strong>Glimmd</strong></a>
-    <nav><a href="index.html">Inicio</a><a href="privacy.html">Privacidad</a><a class="language-link" href="../support.html" lang="en">English</a></nav>
+    <nav><a href="index.html">Inicio</a><a href="privacy.html">Privacidad</a><a href="informacion-importante.html">Información importante</a><a class="language-link" href="../support.html" lang="en">English</a></nav>
   </header>
   <main>
     <h1>Soporte</h1>
     <p class="lead">Informa problemas y solicita ayuda mediante el registro público de soporte de Glimmd.</p>
     <p><a href="https://github.com/rootdigitalcr/glimmd-pages/issues/new" rel="noopener noreferrer">Abrir una solicitud de soporte en GitHub</a></p>
+    <h2 id="archivos-locales">Leer archivos Markdown locales</h2>
+    <ol>
+      <li>Abre <code>chrome://extensions</code>, busca Glimmd y entra en <strong>Detalles</strong>.</li>
+      <li>Activa <strong>Permitir acceso a URL de archivo</strong>. Chrome exige esta decisión para abrir documentos guardados en tu equipo y detectar otros Markdown de la misma carpeta. Los Markdown web no necesitan este permiso.</li>
+      <li>Arrastra un archivo <code>.md</code> a Chrome o usa <kbd>Ctrl</kbd>+<kbd>O</kbd>.</li>
+      <li>Si la pestaña ya estaba abierta después de instalar, actualizar o cambiar el permiso, recárgala una vez.</li>
+    </ol>
+    <p>La página <strong>Ayuda y primeros pasos</strong> de la extensión comprueba el estado actual y explica navegación, búsqueda, apariencia, atajos y problemas comunes.</p>
+    <h2>Resaltados, comentarios y cambios del archivo</h2>
+    <p>Selecciona hasta 500 caracteres y usa el menú flotante para resaltar o comentar el fragmento. También puedes agregar un comentario a un resaltado existente o resaltar directamente el fragmento de un comentario guardado desde su editor, sin seleccionarlo de nuevo. Ambos tipos permanecen en el perfil local de Chrome y aparecen ordenados en pestañas separadas del panel derecho. Preferencias muestra su almacenamiento aproximado, permite explorar comentarios guardados por texto o documento y puede respaldar o borrar uno, varios o todos los documentos. Si el archivo cambia, Glimmd solo recupera coincidencias inequívocas. Los fragmentos no asociados quedan en <strong>Versión anterior</strong> para copiarlos o eliminarlos; Glimmd nunca adivina una ubicación nueva.</p>
+    <h2>Retomar la lectura</h2>
+    <p>Glimmd recuerda un punto de lectura aproximado para un máximo de 120 documentos recientes y lo adapta al tamaño actual de la ventana cuando se vuelve a abrir el documento. Este registro limitado permanece en el perfil local de Chrome y caduca después de un año.</p>
     <h2>Antes de informar</h2>
     <ol>
       <li>Confirma que usas Chrome 122 o posterior.</li>
-      <li>Para documentos locales, activa “Permitir acceso a URLs de archivo” en los detalles de Glimmd.</li>
+      <li>Para documentos locales, activa “Permitir acceso a URL de archivo” en los detalles de Glimmd.</li>
       <li>Recarga la extensión y cualquier pestaña Markdown que ya estuviera abierta.</li>
     </ol>
     <h2>Incluye</h2>
